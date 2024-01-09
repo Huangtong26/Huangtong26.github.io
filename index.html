@@ -3,86 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modern Webpage</title>
+    <title>Card Game</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        header {
-            background-color: #1a1a1a;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
+        #game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-            margin: 0 10px;
-        }
-
-        section {
-            padding: 20px;
-        }
-
-        article {
-            background-color: #fff;
-            padding: 20px;
-            margin: 10px 0;
+        .card {
+            width: 100px;
+            height: 150px;
+            margin: 10px;
+            border: 1px solid #ccc;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            background-color: #1a1a1a;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Modern Webpage</h1>
-    </header>
-    
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
-    
-    <section>
-        <article>
-            <h2>Section 1</h2>
-            <p>This is the first section of your modern webpage. Add your content here.</p>
-        </article>
-        
-        <article>
-            <h2>Section 2</h2>
-            <p>This is the second section of your modern webpage. Add your content here.</p>
-        </article>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Modern Webpage. All rights reserved.</p>
-    </footer>
+
+<div id="game-container"></div>
+
+<script>
+    // You can add your JavaScript logic for the card game here
+    // For a simple example, you might generate and display cards dynamically
+    const suits = ['Hearts', 'Diamonds', 'Clubs', 'Spades'];
+    const values = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+
+    const gameContainer = document.getElementById('game-container');
+
+    // Generate and display cards
+    for (const suit of suits) {
+        for (const value of values) {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.textContent = `${value} ${suit}`;
+            gameContainer.appendChild(card);
+        }
+    }
+
+    // You can add event listeners and game logic here
+    // For example, flipping cards, checking matches, etc.
+</script>
+
 </body>
 </html>
