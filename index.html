@@ -3,24 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Webpage</title>
+    <title>Modern Webpage</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
         }
+
         header {
-            text-align: center;
-            background-color: #f0f0f0;
+            background-color: #1a1a1a;
+            color: #fff;
             padding: 10px;
+            text-align: center;
         }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
         section {
-            margin-top: 20px;
+            padding: 20px;
         }
+
+        article {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
         footer {
+            background-color: #1a1a1a;
+            color: #fff;
             text-align: center;
             padding: 10px;
-            background-color: #f0f0f0;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -29,21 +59,30 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to My Simple Webpage</h1>
+        <h1>Modern Webpage</h1>
     </header>
-
+    
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    
     <section>
-        <h2>About</h2>
-        <p>This is a simple webpage created with HTML.</p>
+        <article>
+            <h2>Section 1</h2>
+            <p>This is the first section of your modern webpage. Add your content here.</p>
+        </article>
+        
+        <article>
+            <h2>Section 2</h2>
+            <p>This is the second section of your modern webpage. Add your content here.</p>
+        </article>
     </section>
-
-    <section>
-        <h2>Contact</h2>
-        <p>You can contact me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
-    </section>
-
+    
     <footer>
-        <p>&copy; 2024 Simple Webpage</p>
+        <p>&copy; 2024 Modern Webpage. All rights reserved.</p>
     </footer>
 </body>
 </html>
